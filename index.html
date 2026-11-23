@@ -33,7 +33,7 @@
         <meta property="og:site_name" content="Galih Sukmamukti Hidayatullah" />
         <meta
             property="og:image"
-            content="https://galihsuks.com/assets/my_photo_meta.jpg"
+            content="https://galihsuks.com/assets/Cinematic Black Jacket Portrait.png"
         />
         <meta property="og:image:alt" content="Galih Sukmamukti Hidayatullah" />
 
@@ -48,13 +48,13 @@
         />
         <meta
             name="twitter:image"
-            content="https://galihsuks.com/assets/my_photo_meta.jpg"
+            content="https://galihsuks.com/assets/Cinematic Black Jacket Portrait.png"
         />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oooh+Baby&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
         <script src="https://cdn.tailwindcss.com"></script>
@@ -63,13 +63,14 @@
                 theme: {
                     extend: {
                         fontFamily: {
-                            sans: ["Poppins", "sans-serif"],
-                            hand: ["BrittanySignature", "cursive"],
+                            poppins: ["Poppins", "sans-serif"],
+                            bebas: ["Bebas Neue", "sans-serif"],
+                            hand: ["Oooh Baby", "cursive"],
                         },
                         colors: {
-                            ink: "#08090d",
-                            panel: "#11131a",
-                            line: "rgba(255,255,255,.14)",
+                            "red-transparant": "rgba(223,14,25,.63)",
+                            circle: "rgba(181,14,26,.39)",
+                            pink: "#FF4A57",
                             brand: "#d10a8a",
                             flame: "#f26a06",
                             cyan: "#39d0ff",
@@ -79,18 +80,11 @@
             };
         </script>
         <style>
-            @font-face {
-                font-family: "BrittanySignature";
-                src: url("./assets/fonts/BrittanySignature.ttf")
-                    format("truetype");
-                font-display: swap;
-            }
-
             html {
                 scroll-behavior: smooth;
             }
 
-            body {
+            /* #section-hero {
                 background:
                     radial-gradient(
                         circle at 18% 12%,
@@ -108,66 +102,7 @@
                         #10121a 48%,
                         #07080c 100%
                     );
-            }
-
-            .glass {
-                background: rgba(255, 255, 255, 0.08);
-                border: 1px solid rgba(255, 255, 255, 0.14);
-                box-shadow: 0 20px 80px rgba(0, 0, 0, 0.26);
-                backdrop-filter: blur(18px);
-            }
-
-            .hairline {
-                background: linear-gradient(
-                    90deg,
-                    transparent,
-                    rgba(255, 255, 255, 0.26),
-                    transparent
-                );
-            }
-
-            .skill-logo.ver {
-                width: auto;
-                height: 38px;
-            }
-
-            .skill-logo.hor {
-                width: 52px;
-                height: auto;
-            }
-
-            .active-link {
-                color: #ffffff;
-            }
-
-            .active-link::after {
-                transform: scaleX(1);
-            }
-
-            .nav-link::after {
-                content: "";
-                display: block;
-                height: 2px;
-                margin-top: 6px;
-                background: linear-gradient(90deg, #39d0ff, #f26a06);
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: transform 180ms ease;
-            }
-
-            .nav-link:hover::after {
-                transform: scaleX(1);
-            }
-
-            @media (max-width: 640px) {
-                .skill-logo.ver {
-                    height: 30px;
-                }
-
-                .skill-logo.hor {
-                    width: 42px;
-                }
-            }
+            } */
         </style>
         <script type="application/ld+json">
             {
@@ -176,7 +111,7 @@
                 "name": "Galih Sukmamukti Hidayatullah",
                 "jobTitle": "Full Stack Developer",
                 "url": "https://galihsuks.com/",
-                "image": "https://galihsuks.com/assets/my_photo_meta.jpg",
+                "image": "https://galihsuks.com/assets/Cinematic Black Jacket Portrait.png",
                 "email": "mailto:galih8.4.2001@gmail.com",
                 "telephone": "+6281905266517",
                 "address": {
@@ -201,193 +136,123 @@
             }
         </script>
     </head>
-    <body class="font-sans text-sm text-white antialiased">
-        <nav
-            id="navbar"
-            class="sticky top-0 z-50 border-b border-transparent transition-all duration-300"
-        >
-            <div
-                class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8"
-            >
-                <a
-                    href="#hero-section"
-                    class="font-hand leading-none text-2xl"
-                    aria-label="Back to top"
-                    >Galih</a
-                >
-
-                <div class="hidden items-center gap-8 md:flex">
-                    <a
-                        class="nav-link text-white/[0.72] transition hover:text-white"
-                        href="#hero-section"
-                        >Profile</a
-                    >
-                    <a
-                        class="nav-link text-white/[0.72] transition hover:text-white"
-                        href="#ability-section"
-                        >Skills</a
-                    >
-                    <a
-                        class="nav-link text-white/[0.72] transition hover:text-white"
-                        href="#work-section"
-                        >Experience</a
-                    >
-                    <a
-                        class="nav-link text-white/[0.72] transition hover:text-white"
-                        href="#project-section"
-                        >Projects</a
-                    >
-                    <a
-                        class="nav-link text-white/[0.72] transition hover:text-white"
-                        href="#contact-section"
-                        >Contact</a
-                    >
-                    <a
-                        href="https://drive.google.com/file/d/1qRNUVu0kVeAFEHCljS2KVCWFmFpkWmrf/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="rounded-full bg-white px-5 py-2.5 font-semibold text-ink transition hover:bg-white/90"
-                    >
-                        Resume
-                    </a>
-                </div>
-
-                <button
-                    id="menu-open"
-                    class="glass inline-flex h-11 w-11 items-center justify-center rounded-md md:hidden"
-                    aria-label="Open navigation menu"
-                    aria-controls="mobile-menu"
-                    aria-expanded="false"
-                >
-                    <span
-                        class="h-0.5 w-5 bg-white before:block before:h-0.5 before:w-5 before:-translate-y-1.5 before:bg-white before:content-[''] after:block after:h-0.5 after:w-5 after:translate-y-1 after:bg-white after:content-['']"
-                    ></span>
-                </button>
-            </div>
-        </nav>
-
-        <div
-            id="mobile-menu"
-            class="fixed inset-0 z-[60] hidden bg-black/70 p-5 backdrop-blur-xl md:hidden"
-        >
-            <div class="glass flex min-h-full flex-col rounded-lg p-6">
-                <button
-                    id="menu-close"
-                    class="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-md bg-white text-2xl leading-none text-ink"
-                    aria-label="Close navigation menu"
-                >
-                    &times;
-                </button>
-                <div class="mt-10 flex flex-col gap-5 text-lg">
-                    <a class="mobile-link" href="#hero-section">Profile</a>
-                    <a class="mobile-link" href="#ability-section">Skills</a>
-                    <a class="mobile-link" href="#work-section">Experience</a>
-                    <a class="mobile-link" href="#project-section">Projects</a>
-                    <a class="mobile-link" href="#contact-section">Contact</a>
-                    <a
-                        href="https://drive.google.com/file/d/1qRNUVu0kVeAFEHCljS2KVCWFmFpkWmrf/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="mt-4 rounded-full bg-white px-5 py-3 text-center font-semibold text-ink"
-                    >
-                        View Resume
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <main>
+    <body class="antialiased bg-black">
+        <main class="block [container-type:size] w-full select-none">
             <section
-                id="hero-section"
-                class="mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl items-center gap-12 px-5 py-14 lg:grid-cols-[1.05fr_.95fr] lg:px-8"
+                class="relative overflow-hidden aspect-[356/215] block w-full"
             >
-                <div>
+                <div
+                    class="absolute top-[4%] right-[3%] gap-[1cqw] flex items-center"
+                >
                     <p
-                        class="mb-5 inline-flex rounded-full border border-white/[0.15] bg-white/[0.08] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-cyan"
+                        class="font-light tracking-[.3cqw] text-[0.7cqw] text-white font-poppins"
                     >
-                        Full Stack Developer
+                        AVAILABLE FOR FREELANCE
                     </p>
-                    <h1
-                        class="max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-7xl"
-                    >
-                        I build reliable web apps from interface to
-                        infrastructure.
-                    </h1>
-                    <p
-                        class="mt-6 max-w-2xl text-base leading-8 text-white/[0.72] md:text-lg"
-                    >
-                        I'm Galih Sukmamukti Hidayatullah, an ITS graduate with
-                        3+ years of experience shipping production systems
-                        across e-commerce, IoT, chat applications, and
-                        enterprise operations. I turn product needs into clean
-                        interfaces, practical APIs, and maintainable backend
-                        workflows.
-                    </p>
-
-                    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-                        <a
-                            href="mailto:galih8.4.2001@gmail.com?subject=Project%20or%20Hiring%20Opportunity%20for%20Galih"
-                            class="rounded-full bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-white/90"
-                        >
-                            Hire Me
-                        </a>
-                        <a
-                            href="https://drive.google.com/file/d/1qRNUVu0kVeAFEHCljS2KVCWFmFpkWmrf/view?usp=sharing"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="glass rounded-full px-7 py-3.5 text-center font-semibold transition hover:bg-white/[0.15]"
-                        >
-                            View Resume
-                        </a>
-                    </div>
-
-                    <dl
-                        class="mt-10 grid grid-cols-3 gap-3 border-y border-white/[0.12] py-5 text-center sm:max-w-xl"
-                    >
-                        <div>
-                            <dt class="text-2xl font-bold">3+</dt>
-                            <dd class="mt-1 text-xs text-white/[0.58]">
-                                Years Experience
-                            </dd>
-                        </div>
-                        <div>
-                            <dt class="text-2xl font-bold">10+</dt>
-                            <dd class="mt-1 text-xs text-white/[0.58]">
-                                Shipped Projects
-                            </dd>
-                        </div>
-                        <div>
-                            <dt class="text-2xl font-bold">Full</dt>
-                            <dd class="mt-1 text-xs text-white/[0.58]">
-                                Stack Delivery
-                            </dd>
-                        </div>
-                    </dl>
+                    <span
+                        class="rounded-full bg-pink w-[.5cqw] aspect-square"
+                    ></span>
                 </div>
-
-                <div class="relative mx-auto w-full max-w-md">
-                    <div class="glass overflow-hidden rounded-lg p-5">
-                        <img
-                            src="./assets/my_photo.png"
-                            alt="Portrait of Galih Sukmamukti Hidayatullah"
-                            class="mx-auto aspect-square w-full max-w-sm object-contain"
-                            fetchpriority="high"
-                        />
-                        <div class="mt-5 border-t border-white/[0.12] pt-5">
-                            <p
-                                class="font-hand text-3xl leading-none mt-3 mb-4"
-                            >
-                                Galih
-                            </p>
-                            <h2 class="mt-2 text-2xl font-semibold">
-                                Galih Sukmamukti Hidayatullah
-                            </h2>
-                            <p class="mt-2 text-sm leading-6 text-white/[0.64]">
-                                Jakarta based developer focused on practical,
-                                production-ready web systems.
-                            </p>
-                        </div>
-                    </div>
+                <div
+                    class="absolute rounded-full top-[10%] left-1/2 -translate-x-1/2 w-[45cqw] aspect-square bg-circle blur-[150px]"
+                ></div>
+                <p
+                    class="tracking-tight -top-[2%] right-[46%] absolute text-red-transparant font-bebas text-[30cqw]"
+                >
+                    PORTFOLIO
+                </p>
+                <p
+                    class="tracking-tight -bottom-[8%] left-[35%] absolute text-red-transparant font-bebas text-[30cqw]"
+                >
+                    PORTFOLIO
+                </p>
+                <p
+                    class="tracking-tight top-[27%] left-[60%] absolute text-white font-bebas text-[10cqw]"
+                >
+                    “
+                </p>
+                <p
+                    class="tracking-tight leading-[3cqw] text-[4cqw] top-[39%] left-[60%] absolute text-white font-bebas"
+                >
+                    I build reliable web<br />apps from interface to<br />infrastructure.
+                </p>
+                <img
+                    src="/assets/photo-hero.png"
+                    alt="Galih Sukmamukti Hidayatillah"
+                    class="absolute w-[47cqw] bottom-0 left-1/2 -translate-x-[60%]"
+                />
+                <p
+                    class="text-[3cqw] top-[42%] left-[10%] absolute text-white font-hand"
+                >
+                    Hello! I'm
+                </p>
+                <p
+                    class="tracking-tight leading-[6cqw] text-[8cqw] top-[52%] left-[10%] absolute text-white font-bebas"
+                >
+                    Galih<br />Sukmamukti
+                </p>
+                <p
+                    class="tracking-[2cqw] leading-[6cqw] font-semibold text-[3cqw] top-[70%] left-[10%] absolute text-pink font-poppins"
+                >
+                    FULL STACK DEVELOPER
+                </p>
+                <p
+                    class="text-[.8cqw] top-[80%] left-[10%] w-[27%] absolute text-white font-poppins"
+                >
+                    Full Stack Developer with 3+ years of experience building
+                    scalable web applications and backend systems. Experienced
+                    in developing products from scratch, integrating payment
+                    solutions, and optimizing system performance. Passionate
+                    about solving real-world problems through efficient,
+                    reliable, and impactful technology.
+                </p>
+            </section>
+            <section
+                class="bg-red-transparant flex justify-center items-center gap-[4cqw] p-[2%] w-full"
+            >
+                <div
+                    class="flex justify-center items-center gap-[1cqw] text-white"
+                >
+                    <p
+                        class="tracking-tight leading-[3cqw] text-[4cqw] top-[39%] left-[60%] font-bebas"
+                    >
+                        3+
+                    </p>
+                    <p
+                        class="font-light tracking-[.3cqw] text-[1cqw] font-poppins"
+                    >
+                        YEARS<br />EXPERIENCE
+                    </p>
+                </div>
+                <div class="bg-white opacity-50 w-[1px] h-[3cqw]"></div>
+                <div
+                    class="flex justify-center items-center gap-[1cqw] text-white"
+                >
+                    <p
+                        class="tracking-tight leading-[3cqw] text-[4cqw] top-[39%] left-[60%] font-bebas"
+                    >
+                        10+
+                    </p>
+                    <p
+                        class="font-light tracking-[.3cqw] text-[1cqw] font-poppins"
+                    >
+                        SHIPPED<br />PROJECTS
+                    </p>
+                </div>
+                <div class="bg-white opacity-50 w-[1px] h-[3cqw]"></div>
+                <div
+                    class="flex justify-center items-center gap-[1cqw] text-white"
+                >
+                    <p
+                        class="tracking-tight leading-[3cqw] text-[4cqw] top-[39%] left-[60%] font-bebas"
+                    >
+                        100k+
+                    </p>
+                    <p
+                        class="font-light tracking-[.3cqw] text-[1cqw] font-poppins"
+                    >
+                        UsER<br />EXPERIENCES
+                    </p>
                 </div>
             </section>
 
@@ -988,18 +853,6 @@
                 </div>
             </section>
         </main>
-
-        <footer class="mx-auto max-w-7xl px-5 pb-8 lg:px-8">
-            <div class="hairline h-px w-full"></div>
-            <div
-                class="flex flex-col gap-3 py-6 text-xs text-white/[0.56] sm:flex-row sm:items-center justify-center"
-            >
-                <p class="text-center">
-                    Copyright &copy; <span id="year"></span> Galih Sukmamukti
-                    Hidayatullah. All rights reserved.
-                </p>
-            </div>
-        </footer>
 
         <div
             id="iotku-modal"
