@@ -82,6 +82,10 @@
         <style>
             html {
                 scroll-behavior: smooth;
+                scrollbar-width: none;
+            }
+            html::-webkit-scrollbar {
+                display: none;
             }
         </style>
         <script type="application/ld+json">
@@ -117,7 +121,12 @@
         </script>
     </head>
     <body class="antialiased bg-black">
-        <main class="block [container-type:size] w-full select-none">
+        <main
+            class="block [container-type:size] overflow-hidden h-[800vw] w-[100vw] select-none relative"
+        >
+            <div
+                class="absolute rounded-full top-[140cqw] -right-[40cqw] w-[80cqw] aspect-square bg-circle blur-[150px]"
+            ></div>
             <section
                 class="relative overflow-hidden aspect-[356/215] block w-full"
             >
@@ -337,7 +346,13 @@
             <section
                 class="text-white p-[6cqw] w-full border-y border-pink relative"
             >
-                <div class="px-[11cqw] flex">
+                <div
+                    class="absolute left-0 top-1/2 -translate-y-1/2 h-[30cqw] w-[2cqw] bg-red-transparant"
+                ></div>
+                <div
+                    class="absolute right-[8%] top-0 h-[100%] w-[30cqw] bg-red-transparant"
+                ></div>
+                <div class="relative px-[11cqw] flex">
                     <div class="w-[40%] flex flex-col gap-[3cqw] font-poppins">
                         <div>
                             <div class="flex items-center gap-[1cqw]">
@@ -475,6 +490,59 @@
                             My professional work spans startup-like ownership,
                             enterprise systems, and client-driven product
                             requirements.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="relative overflow-hidden h-[500cqw] block w-full">
+                <p class="absolute bottom-0 text-white">Akhir sesion</p>
+                <p
+                    class="tracking-tight -top-[1cqw] right-[53%] absolute text-red-transparant font-bebas text-[30cqw]"
+                >
+                    PROJECTS
+                </p>
+                <p
+                    class="tracking-tight top-[20.5cqw] left-[35%] absolute text-red-transparant font-bebas text-[30cqw]"
+                >
+                    PROJECTS
+                </p>
+                <div
+                    class="flex items-end gap-[2cqw] top-[20cqw] left-[60%] absolute"
+                >
+                    <p
+                        class="text-end tracking-tight leading-[3cqw] text-[4cqw] text-white font-bebas"
+                    >
+                        Projects that<br />
+                        show how I solve<br />
+                        product problems
+                    </p>
+                    <div
+                        class="bg-white aspect-square w-[2cqw] mb-[.4cqw]"
+                    ></div>
+                </div>
+                <p
+                    class="text-[.8cqw] top-[35cqw] left-[10%] w-[27%] absolute text-white font-poppins"
+                >
+                    A mix of commercial products and personal builds, chosen to
+                    highlight full stack ownership, integration work, and
+                    maintainable delivery.
+                </p>
+                <div
+                    class="rounded-full aspect-square border border-white w-[56cqw] opacity-50 absolute top-[17cqw] -left-[10cqw]"
+                ></div>
+
+                <!-- sections web apps -->
+                <div class="mt-[70cqw]">
+                    <div class="flex items-center justify-center flex-col">
+                        <p
+                            class="relative z-2 font-hand text-white text-[3cqw] leading-[1cqw]"
+                        >
+                            Section
+                        </p>
+                        <p
+                            class="relative z-1 font-bebas text-red-transparant text-[5cqw] leading-[4cqw]"
+                        >
+                            WEB APPS
                         </p>
                     </div>
                 </div>
